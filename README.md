@@ -1,6 +1,6 @@
 # OOP School Library
 
-> App for school libraries
+> App for school libraries. used in the terminal
 
 ## 🛠️ Built With
 
