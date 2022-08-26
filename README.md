@@ -7,6 +7,12 @@
 - Ruby
 - Linters: Rubocop
 
+## Getting Started
+
+- `To run the code please use the "Code Runner" VSCode extension`
+- OR
+- `ruby main.rb in the terminal`
+
 ## 👤 Authors
 
 ### Mauricio Cantillo Moreno
