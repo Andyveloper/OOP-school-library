@@ -9,6 +9,9 @@
 
 ## Getting Started
 
+- Clone the repository
+- `git clone https://github.com/Andyveloper/OOP-school-library.git`
+
 - `To run the code please use the "Code Runner" VSCode extension`
 - OR
 - `ruby main.rb in the terminal`
