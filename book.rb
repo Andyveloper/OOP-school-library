@@ -9,8 +9,8 @@ class Book
     @rentals = []
   end
 
-  def add_rental(rental)
-    @rentals.push(rental)
-    rental.book = self
+  def add_rental(person, date)
+    new_rentals = Rental.new(date, self, person)
+    @rentals.push(new_rentals) unless @rentals.include?(new_rentals)
   end
 end
