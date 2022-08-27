@@ -7,7 +7,6 @@ class MainScreen
 
   def initial
     header
-    puts '║                                                           ║'
     puts '║ [1] Book List                                             ║'
     puts '║ [2] People List                                           ║'
     puts '║ [3] Add Person                                            ║'
@@ -15,7 +14,6 @@ class MainScreen
     puts '║ [5] Rent a Book                                           ║'
     puts '║ [6] Rental History                                        ║'
     puts '║ [7] Exit                                                  ║'
-    puts '║                                                           ║'
     puts '╚═══════════════════════════════════════════════════════════╝'
   end
 
@@ -23,7 +21,6 @@ class MainScreen
     header
     puts '║ Book List                                                 ║'
     puts '╠═══════════════════════════════════════════════════════════╣'
-    puts '║                                                           ║'
     loop_book(data)
     footer
   end
@@ -32,7 +29,6 @@ class MainScreen
     header
     puts '║ People List                                               ║'
     puts '╠═══════════════════════════════════════════════════════════╣'
-    puts '║                                                           ║'
     loop_person(data)
     footer
   end
@@ -40,7 +36,6 @@ class MainScreen
   def add_book
     header
     puts '║ Add Book                                                  ║'
-    puts '║                                                           ║'
     puts '╚═══════════════════════════════════════════════════════════╝'
   end
 
@@ -50,13 +45,10 @@ class MainScreen
     puts '╠═══════════════════════════════════════════════════════════╣'
     puts '║                      Book List                            ║'
     loop_book(books)
-    puts '║                                                           ║'
     puts '║                     Person List                           ║'
     loop_person(people)
 
     if books.length.positive? && people.length.positive?
-      puts '║                                                           ║'
-      puts '║                                                           ║'
       puts '╚═══════════════════════════════════════════════════════════╝'
 
     else
@@ -86,7 +78,6 @@ class MainScreen
     rent_footer(data)
   end
 
-  # revisar en caso de que no funcione
   def rent_title(person)
     if person
       line = "║  Rental history: #{person.name}"
@@ -95,12 +86,10 @@ class MainScreen
       puts '║  Rental history                                           ║'
     end
     puts '╠═══════════════════════════════════════════════════════════╣'
-    puts '║                                                           ║'
   end
 
   def rent_footer(data)
     if data&.length&.positive?
-      puts '║                                                           ║'
       puts '╚═══════════════════════════════════════════════════════════╝'
     else
       footer
@@ -110,7 +99,6 @@ class MainScreen
   def add_person
     header
     puts '║  Add a person                                             ║'
-    puts '║                                                           ║'
     puts '╚═══════════════════════════════════════════════════════════╝'
   end
 
@@ -138,9 +126,7 @@ class MainScreen
 
   def exit
     header
-    puts '║                                                           ║'
     puts '║                  THANK YOU, GOOD BYE!                     ║'
-    puts '║                                                           ║'
     puts '║     ██████                                                ║'
     puts '║     ██████                    ████▒▒████                  ║'
     puts '║   ████▒▒████████████████████████████▒▒██                  ║'
@@ -178,9 +164,7 @@ class MainScreen
 
   def success
     header
-    puts '║                                                           ║'
     puts '║                   Successful Operation                    ║'
-    puts '║                                                           ║'
     puts '╚═══════════════════════════════════════════════════════════╝'
   end
 end
