@@ -15,7 +15,7 @@ class App
 
   def run
     @screen.initial
-    print '   Select a option number, then press [ENTER]: '
+    print '   Select any option number, then press [ENTER]: '
     opc = gets.chomp.to_i
 
     case opc
@@ -64,7 +64,7 @@ class App
     @screen.add_book
     print '   Enter a title: '
     title = gets.chomp
-    print '   Enter a author: '
+    print '   Enter the author: '
     author = gets.chomp
 
     new_book = Book.new(title.capitalize, author.capitalize)
@@ -110,7 +110,7 @@ class App
 
   def goback
     @screen.success
-    sleep(2)
+    sleep(1)
     run
   end
 

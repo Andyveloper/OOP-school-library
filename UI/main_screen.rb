@@ -75,7 +75,7 @@ class MainScreen
       if person.rentals.length.positive?
         person.rentals.each do |rent|
           line = "║ #{rent.date} - #{rent.book.title} (#{rent.book.author})"
-          puts line "#{whitespace(line.length)}║"
+          puts "#{line} #{whitespace(line.length)}║"
         end
       else
         puts '║               -- No rentals available --                  ║'
@@ -83,19 +83,19 @@ class MainScreen
     else
       loop_person(data)
     end
-    rent_footer
+    rent_footer(data)
   end
 
   # revisar en caso de que no funcione
   def rent_title(person)
     if person
       line = "║  Rental history: #{person.name}"
-      puts line "#{whitespace(line.length)}║"
+      puts "#{line} #{whitespace(line.length)}║"
     else
       puts '║  Rental history                                           ║'
     end
     puts '╠═══════════════════════════════════════════════════════════╣'
-    puts blankline
+    puts '║                                                           ║'
   end
 
   def rent_footer(data)
