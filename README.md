@@ -20,7 +20,7 @@
 
 ### Mauricio Cantillo Moreno
 
-- GitHub: [@Zeraltz](https://github.com/Zeraltz)
+- GitHub: [@Andyveloper](https://github.com/Andyveloper)
 - Twitter: [@MauroCantillo\_](https://twitter.com/MauroCantillo_)
 - LinkedIn: [Mauricio Cantillo Moreno](https://www.linkedin.com/in/mauricio-cantillo-moreno/)
 
